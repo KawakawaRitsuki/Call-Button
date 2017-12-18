@@ -88,12 +88,12 @@ function setState(s){
   document.getElementById("render").style.transform = `scale(${scale})`;
 }
 
-function onKeyPress(e) {
+document.addEventListener('keypress',function(e) {
   if ( e.keyCode !== 13 || ( e.keyCode === 13 && (e.shiftKey === true || e.ctrlKey === true || e.altKey === true) )) { // Enterキー除外
     return false;
   }
   if(state == 1) firebase.database().ref('/Status/Status').set(false);
-}
+});
 
 document.getElementById("body").addEventListener("click",function (evt) {
   if(state == 1) firebase.database().ref('/Status/Status').set(false);
