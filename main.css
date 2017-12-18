@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+    height: 100% !important;
+    width: 100%;
+    font-size: 1.4em;
+    display: table;
+    height: 10rem;
+}
+p {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;   
+}
+
+p.nomality {
+    background-color: #c6f6ff;
+    color: #4991cc;
+}
+
+p.calling {
+    background-color: #fffac6;
+    color: #959b2d;
+}
+
+p.error {
+    background-color: #ffd0c6;
+    color: #ef8057;
+}
+
+#render{
+  transform-origin: left top;
+  display: inline-block;
+}
